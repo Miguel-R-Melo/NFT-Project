@@ -14,24 +14,33 @@ main{
     justify-content: center;
 }
 
+hr{
+    width: 17em;
+    border: 0.1em solid hsl(215, 51%, 70%); 
+    margin: 0.4em auto;
+}
+
 .container{
-    width: 22em;
+    width: 18.9em;
     height: 34em;
     border-radius: 0.7em;
     text-align: center;
+    box-shadow: 0.3em 0.3em 3em rgba(0, 0, 0, 0.793);
     background-color:  hsl(216, 50%, 16%);
 }
 
 #image-nft{
-    width: 17em;
-    height: 17em;
+    width: 16em;
+    height: 16em;
     border-radius: 0.7em;
-    margin: 1.4em 1.4em 0.6em 1.4em; 
+    margin: 1em auto 0.5em auto;
 }
 
+
+
 .desc{
-    width: 17em;
-    height: 10em;
+    width: 16em;
+    height: 7em;
     margin: 0 auto;
     text-align: left;
 }
@@ -42,9 +51,73 @@ main{
     font: 600 large "Outfit";
 }
 
+#desc-nft:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%) ;
+}
+
 #caption{
     color: hsl(215, 51%, 70%);
     font-family: "Outfit";
     font-size: 400;
     line-height: 1.3em;
+}
+
+.price{
+    width: 16em;
+    height: 3em;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price p{
+    display: flex;
+    align-items: center;
+}
+
+#eth-price{
+    font-family: "Outfit";
+    font-weight: large;
+    color:hsl(178, 100%, 50%) ;
+}
+
+#eth-time{
+    font-family: "Outfit";
+    font-weight: large;
+    color: hsl(215, 51%, 70%);
+}
+
+#clock, #eth-icon{
+    margin-right: 0.2em;
+}
+
+.creation{
+    width: 16em;
+    height: 4em;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+#avatar{
+    width: 2.5em;
+    height: 2.5em;
+    margin-right: 0.8em;
+}
+
+#creation-desc{
+    font-family: "Outfit";
+    font-weight: large;
+    color: hsl(215, 51%, 70%); 
+}
+
+#name{
+    color: white;
+}
+
+#name:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
 }
