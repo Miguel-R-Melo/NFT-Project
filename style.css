@@ -29,6 +29,11 @@ hr{
     background-color:  hsl(216, 50%, 16%);
 }
 
+.container:hover{
+    cursor: pointer;
+    box-shadow: 0.2em 0.2em 5em hsl(178, 100%, 50%);
+}
+
 #image-nft{
     width: 16em;
     height: 16em;
@@ -88,8 +93,15 @@ hr{
     color: hsl(215, 51%, 70%);
 }
 
+
 #clock, #eth-icon{
     margin-right: 0.2em;
+}
+
+#eth-icon{
+    animation-name: light;
+    animation-duration: 2s;
+    border-radius: 50%;
 }
 
 .creation{
@@ -120,4 +132,10 @@ hr{
 #name:hover{
     cursor: pointer;
     color: hsl(178, 100%, 50%);
+}
+
+@keyframes light{
+    to{
+        box-shadow: 0.1em 0.1em 0.5em white;
+    }
 }
